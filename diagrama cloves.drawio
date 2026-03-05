@@ -1,0 +1,151 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 OPR/127.0.0.0" version="29.6.0">
+  <diagram name="Página-1" id="ghpNEpk5Gm0bFVq27V1c">
+    <mxGraphModel dx="1500" dy="845" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="U2G8-_qQ28BN1f8nag1T-2" edge="1" parent="1" source="U2G8-_qQ28BN1f8nag1T-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="320" y="100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="U2G8-_qQ28BN1f8nag1T-39" edge="1" parent="1" source="U2G8-_qQ28BN1f8nag1T-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="U2G8-_qQ28BN1f8nag1T-10">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="150" y="200" />
+              <mxPoint x="640" y="200" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="U2G8-_qQ28BN1f8nag1T-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="60" width="120" x="90" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="U2G8-_qQ28BN1f8nag1T-6" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Módulo de Acolhimento Lúdico" vertex="1">
+          <mxGeometry height="30" width="120" x="90" y="85" as="geometry" />
+        </mxCell>
+        <mxCell id="U2G8-_qQ28BN1f8nag1T-7" parent="1" style="whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="60" width="120" x="320" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="U2G8-_qQ28BN1f8nag1T-8" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Interface onde a criança interage com avatares de IA" vertex="1">
+          <mxGeometry height="30" width="120" x="320" y="85" as="geometry" />
+        </mxCell>
+        <mxCell id="U2G8-_qQ28BN1f8nag1T-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="60" width="120" x="580" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="U2G8-_qQ28BN1f8nag1T-10" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&#xa;API Gateway / Backend&#xa;&#xa;" vertex="1">
+          <mxGeometry height="45" width="120" x="580" y="95" as="geometry" />
+        </mxCell>
+        <mxCell id="U2G8-_qQ28BN1f8nag1T-13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="60" width="130" x="805" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="U2G8-_qQ28BN1f8nag1T-12" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Recebe as solicitações da interface e direciona para os serviços corretos" vertex="1">
+          <mxGeometry height="40" width="130" x="805" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="U2G8-_qQ28BN1f8nag1T-14" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 9px;&quot;&gt;Interface do Usuário (Frontend)&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="90" x="220" y="65" as="geometry" />
+        </mxCell>
+        <mxCell id="U2G8-_qQ28BN1f8nag1T-15" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 9px;&quot;&gt;Gerenciamento de Requisições&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="120" x="690" y="85" as="geometry" />
+        </mxCell>
+        <mxCell id="U2G8-_qQ28BN1f8nag1T-17" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 9px;&quot;&gt;Componentes de Lógica de Negócio (Microsserviços)&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="160" x="1150" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="U2G8-_qQ28BN1f8nag1T-19" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="60" width="120" x="1070" y="85" as="geometry" />
+        </mxCell>
+        <mxCell id="U2G8-_qQ28BN1f8nag1T-22" edge="1" parent="1" source="U2G8-_qQ28BN1f8nag1T-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="U2G8-_qQ28BN1f8nag1T-21" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1210" y="115" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="U2G8-_qQ28BN1f8nag1T-20" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Classe de Perfil do Paciente" vertex="1">
+          <mxGeometry height="30" width="100" x="1080" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="U2G8-_qQ28BN1f8nag1T-21" parent="1" style="whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="60" width="120" x="1270" y="85" as="geometry" />
+        </mxCell>
+        <mxCell id="U2G8-_qQ28BN1f8nag1T-23" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Encapsula dados clínicos (restritos) e interesses pedagógicos" vertex="1">
+          <mxGeometry height="30" width="120" x="1270" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="U2G8-_qQ28BN1f8nag1T-51" edge="1" parent="1" source="U2G8-_qQ28BN1f8nag1T-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fillColor=#fad7ac;strokeColor=light-dark(#000000,#CC0000);" target="U2G8-_qQ28BN1f8nag1T-28">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="940" y="195" />
+              <mxPoint x="940" y="275" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="U2G8-_qQ28BN1f8nag1T-24" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="60" width="120" x="1070" y="165" as="geometry" />
+        </mxCell>
+        <mxCell id="U2G8-_qQ28BN1f8nag1T-27" edge="1" parent="1" source="U2G8-_qQ28BN1f8nag1T-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="U2G8-_qQ28BN1f8nag1T-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="U2G8-_qQ28BN1f8nag1T-25" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Módulo de IA Generativa" vertex="1">
+          <mxGeometry height="30" width="130" x="1065" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="U2G8-_qQ28BN1f8nag1T-26" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Cria histórias e ilustrações em tempo real" vertex="1">
+          <mxGeometry height="60" width="120" x="1270" y="165" as="geometry" />
+        </mxCell>
+        <mxCell id="U2G8-_qQ28BN1f8nag1T-30" edge="1" parent="1" source="U2G8-_qQ28BN1f8nag1T-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="U2G8-_qQ28BN1f8nag1T-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="U2G8-_qQ28BN1f8nag1T-28" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Subsistema de Progresso Pedagógico" vertex="1">
+          <mxGeometry height="60" width="120" x="1070" y="245" as="geometry" />
+        </mxCell>
+        <mxCell id="U2G8-_qQ28BN1f8nag1T-29" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&#xa;Registra KPIs e taxas de alfabetização&#xa;&#xa;" vertex="1">
+          <mxGeometry height="60" width="120" x="1270" y="245" as="geometry" />
+        </mxCell>
+        <mxCell id="U2G8-_qQ28BN1f8nag1T-34" edge="1" parent="1" source="U2G8-_qQ28BN1f8nag1T-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="U2G8-_qQ28BN1f8nag1T-33" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="U2G8-_qQ28BN1f8nag1T-31" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Fila de Mensagens (Broker)" vertex="1">
+          <mxGeometry height="60" width="120" x="1070" y="325" as="geometry" />
+        </mxCell>
+        <mxCell id="U2G8-_qQ28BN1f8nag1T-33" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&#xa;Gerencia requisições assíncronas para a IA&#xa;&#xa;" vertex="1">
+          <mxGeometry height="60" width="120" x="1270" y="325" as="geometry" />
+        </mxCell>
+        <mxCell id="U2G8-_qQ28BN1f8nag1T-38" edge="1" parent="1" source="U2G8-_qQ28BN1f8nag1T-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="U2G8-_qQ28BN1f8nag1T-37" value="&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp; ">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="U2G8-_qQ28BN1f8nag1T-35" parent="1" style="rounded=0;whiteSpace=wrap;html=1;direction=east;" value="Banco de Dados Criptografado" vertex="1">
+          <mxGeometry height="60" width="120" x="300" y="355" as="geometry" />
+        </mxCell>
+        <mxCell id="U2G8-_qQ28BN1f8nag1T-36" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 9px;&quot;&gt;&lt;br&gt;Armazenamento e Saída&lt;br&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="80" x="420" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="U2G8-_qQ28BN1f8nag1T-37" parent="1" style="rounded=0;whiteSpace=wrap;html=1;direction=east;" value="Armazena dados anonimizados respeitando a LGPD e o ECA" vertex="1">
+          <mxGeometry height="60" width="120" x="500" y="355" as="geometry" />
+        </mxCell>
+        <mxCell id="U2G8-_qQ28BN1f8nag1T-40" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 9px;&quot;&gt;Validação de Login / Consulta de Perfil&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="190" x="300" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="U2G8-_qQ28BN1f8nag1T-41" edge="1" parent="1" source="U2G8-_qQ28BN1f8nag1T-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.001;entryY=0.693;entryDx=0;entryDy=0;entryPerimeter=0;" target="U2G8-_qQ28BN1f8nag1T-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="U2G8-_qQ28BN1f8nag1T-44" edge="1" parent="1" source="U2G8-_qQ28BN1f8nag1T-10" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.014;entryY=0.102;entryDx=0;entryDy=0;shape=wire;strokeColor=default;curved=0;dashed=1;strokeWidth=1;entryPerimeter=0;" target="U2G8-_qQ28BN1f8nag1T-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="U2G8-_qQ28BN1f8nag1T-46" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;rotation=10;" value="&lt;font style=&quot;font-size: 9px;&quot;&gt;&lt;br&gt;Solicitação de Geração de Imagem/História&lt;br&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="110" x="810" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="U2G8-_qQ28BN1f8nag1T-47" edge="1" parent="1" source="U2G8-_qQ28BN1f8nag1T-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="990" y="355" />
+              <mxPoint x="990" y="220" />
+              <mxPoint x="1070" y="220" />
+            </Array>
+            <mxPoint x="1070" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="U2G8-_qQ28BN1f8nag1T-49" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 9px;&quot;&gt;Processamento de IA&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="920" y="325" as="geometry" />
+        </mxCell>
+        <mxCell id="U2G8-_qQ28BN1f8nag1T-52" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=light-dark(#000000,#FF0000);" value="&lt;font style=&quot;font-size: 9px;&quot;&gt;Alerta de Mudança Emocional Drástica&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="80" x="855" y="225" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
