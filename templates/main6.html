@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Alfabetização Protótipo</title>
+    <style>
+        body { font-family: 'Comic Sans MS', sans-serif; background-color: #e0f7fa; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        #game-container { background: white; padding: 30px; border-radius: 20px; box-shadow: 0 10px 20px rgba(0,0,0,0.1); text-align: center; max-width: 400px; }
+        .emoji { font-size: 80px; margin-bottom: 20px; }
+        h2 { color: #00796b; }
+        .options { display: flex; justify-content: space-around; margin-top: 20px; }
+        button { font-size: 30px; padding: 20px 35px; border: none; border-radius: 15px; cursor: pointer; transition: transform 0.2s; background-color: #fff176; color: #5d4037; font-weight: bold; }
+        button:hover { transform: scale(1.1); }
+        .correct { background-color: #81c784 !important; color: white; }
+        .wrong { background-color: #e57373 !important; color: white; }
+    </style>
+</head>
+<body>
+
+<div id="game-container">
+    <h2>Com que letra começa?</h2>
+    <div class="emoji" id="target-emoji">🐵</div>
+    <p id="feedback">Escolha a letra correta:</p>
+    <div class="options">
+        <button onclick="checkAnswer('', this)">E</button>
+        <button onclick="checkAnswer('M', this)">M</button>
+        <button onclick="checkAnswer('', this)">L</button>
+    </div>
+</div>
+
+<script>
+    function checkAnswer(letter, element) {
+        const feedback = document.getElementById('feedback');
+        const somAcerto = document.getElementById('som-acerto');
+        const somErro = document.getElementById('som-erro');
+        if (letter === 'M') {
+            element.classList.add('correct');
+            feedback.innerText = "Muito bem! M de Macaco! 🌟";
+            feedback.style.color = "#2e7d32";
+            somAcerto.play();
+            setTimeout(() => window.location.replace("/fase7"), 1000);
+        } else {
+            element.classList.add('wrong');
+            feedback.innerText = "Quase lá! Tente de novo. ❤️";
+            
+            // ESTA LINHA CONECTA COM O BANCO DE DADOS:
+            fetch('/registrar_erro'); 
+            
+            somErro.play();
+            setTimeout(() => element.classList.remove('wrong'), 400);
+        }
+    }
+</script>
+
+<audio id="som-acerto" src="{{ url_for('static', filename='sucesso.mp3') }}"></audio>
+<audio id="som-erro" src="{{ url_for('static', filename='erro.mp3') }}"></audio>
+
+</body>
+</html>

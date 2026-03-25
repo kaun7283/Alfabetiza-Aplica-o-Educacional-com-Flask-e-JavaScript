@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parabéns! - Alfabetização IMIP</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', sans-serif;
+            background-color: #e0f7fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden; /* Para os confetes não criarem barra de rolagem */
+        }
+
+        #congrats-container {
+            background: white;
+            padding: 40px;
+            border-radius: 30px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+            text-align: center;
+            z-index: 10;
+            animation: popIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        @keyframes popIn {
+            0% { transform: scale(0.5); opacity: 0; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+
+        h1 { color: #ff5722; font-size: 3rem; margin-bottom: 10px; }
+        p { color: #00796b; font-size: 1.5rem; }
+        
+        .trofeu { font-size: 100px; margin: 20px 0; display: block; }
+
+        .btn-proximo {
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            padding: 20px 40px;
+            font-size: 1.5rem;
+            border-radius: 50px;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(76, 175, 80, 0.4);
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        .btn-proximo:hover {
+            transform: scale(1.1) translateY(-5px);
+            background-color: #43a047;
+        }
+
+        /* Efeito simples de confetes flutuando */
+        .confete {
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            background-color: #f44336;
+            animation: queda 3s linear infinite;
+        }
+
+        @keyframes queda {
+            0% { transform: translateY(-10vh) rotate(0deg); opacity: 1; }
+            100% { transform: translateY(100vh) rotate(360deg); opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+
+<audio id="audio-vitoria" src="{{ url_for('static', filename='completed.mp3') }}"></audio>
+
+    <div id="congrats-container">
+        <span class="trofeu">🏆</span>
+        <h1>PARABÉNS!</h1>
+        
+        <img src="{{ url_for('static', filename='prbns.gif') }}" alt="Parabéns">
+        
+        <br>
+        
+        <a href="/" class="btn-proximo">Começar Novamente</a>
+    </div>
+
+    <script>
+        // Gerador de confetes coloridos
+        const cores = ['#f44336', '#e91e63', '#9c27b0', '#2196f3', '#ffeb3b', '#ff9800'];
+        
+        for (let i = 0; i < 50; i++) {
+            const confete = document.createElement('div');
+            confete.className = 'confete';
+            confete.style.left = Math.random() * 100 + 'vw';
+            confete.style.backgroundColor = cores[Math.floor(Math.random() * cores.length)];
+            confete.style.animationDuration = (Math.random() * 2 + 2) + 's';
+            confete.style.opacity = Math.random();
+            document.body.appendChild(confete);
+        }
+    </script>
+
+    <script>
+    window.onload = function() {
+        const somVitoria = document.getElementById('audio-vitoria');
+        
+        // Tenta tocar o som assim que a página carrega
+        somVitoria.play().catch(error => {
+            console.log("O navegador bloqueou o autoplay. O som tocará na próxima interação.");
+        });
+    };
+</script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem-vindo ao Alfabetiza!</title>
+    <style>
+        body { 
+            font-family: 'Comic Sans MS', sans-serif; 
+            background-color: #e0f7fa; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh; 
+            margin: 0; 
+        }
+
+        #game-container { 
+            background: white; 
+            padding: 40px; 
+            border-radius: 20px; 
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1); 
+            text-align: center; 
+            max-width: 500px; 
+            width: 90%;
+        }
+
+        h1 { color: #00796b; margin-bottom: 10px; }
+        p { color: #5d4037; font-size: 18px; line-height: 1.6; }
+
+        .logo-emoji { font-size: 80px; margin-bottom: 20px; }
+
+        .menu-options { 
+            display: flex; 
+            flex-direction: column; 
+            gap: 15px; 
+            margin-top: 30px; 
+        }
+
+        .btn-start { 
+            font-size: 24px; 
+            padding: 15px 30px; 
+            border: none; 
+            border-radius: 15px; 
+            cursor: pointer; 
+            transition: transform 0.2s, background-color 0.2s; 
+            background-color: #fff176; 
+            color: #5d4037; 
+            font-weight: bold; 
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-start:hover { 
+            transform: scale(1.05); 
+            background-color: #ffd600;
+        }
+
+        footer { margin-top: 30px; font-size: 14px; color: #80cbc4; }
+    </style>
+</head>
+<body>
+
+<div id="game-container">
+    <header>
+        <div class="logo-emoji">📚✨</div>
+        <h1>Alfabetiza!</h1>
+        <p>Aprender a ler e escrever nunca foi tão divertido. Vamos começar essa jornada?</p>
+    </header>
+
+    <main class="menu-options">
+        <a href="/fase1" class="btn-start">Jogar Agora! 🚀</a>
+        
+        <p style="font-size: 14px; color: #757575;">Protótipo desenvolvido para o IMIP</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Alfabetiza - Projeto Acadêmico</p>
+    </footer>
+</div>
+
+</body>
+</html>

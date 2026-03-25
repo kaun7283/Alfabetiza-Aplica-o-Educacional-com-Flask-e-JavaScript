@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Relatório Pedagógico - Alfabetiza</title>
+    <style>
+        body { font-family: sans-serif; background-color: #f4f7f6; padding: 50px; }
+        .card { 
+            background: white; 
+            padding: 30px; 
+            border-radius: 15px; 
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+            max-width: 600px; 
+            margin: auto;
+        }
+        h1 { color: #00796b; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .dado { font-size: 20px; margin: 20px 0; color: #333; }
+        .valor { font-weight: bold; color: #d32f2f; }
+        .status-ok { color: #2e7d32; font-weight: bold; }
+        .btn-voltar { 
+            display: inline-block; 
+            margin-top: 20px; 
+            text-decoration: none; 
+            color: #00796b; 
+            font-weight: bold; 
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Relatório de Desempenho (IMIP)</h1>
+        <p>Dados extraídos do banco de dados <strong>alfabetiza.db</strong></p>
+        
+        <div class="dado">Fase alcançada: <span class="valor">{{ dados.fase_atual }}</span></div>
+        <div class="dado">Total de erros registrados: <span class="valor">{{ dados.erros }}</span></div>
+        <div class="dado">Status da Sessão: 
+            <span class="{{ 'status-ok' if dados.concluido else '' }}">
+                {{ "Concluído" if dados.concluido else "Em andamento" }}
+            </span>
+        </div>
+
+        <a href="/" class="btn-voltar">← Voltar para o Início</a>
+    </div>
+</body>
+</html>
